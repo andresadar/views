@@ -1,6 +1,8 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 
+import '../../../theme/app_color.dart';
+
 class ToggleStoreScreen extends StatelessWidget {
   const ToggleStoreScreen(
       {Key? key,
@@ -29,7 +31,7 @@ class ToggleStoreScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(50),
-              color: _selected ? Colors.green : _grey),
+              color: _selected ? AppColors.primary : _grey),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -47,7 +49,7 @@ class ToggleStoreScreen extends StatelessWidget {
                 child: FittedBox(
                   child: Icon(
                     icon,
-                    color: _selected ? Colors.green : Colors.grey,
+                    color: _selected ? AppColors.primary : Colors.grey,
                   ),
                 ),
               )

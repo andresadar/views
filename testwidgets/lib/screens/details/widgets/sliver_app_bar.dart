@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:testwidgets/models/product_model.dart';
 
+import '../../../theme/app_color.dart';
 import '../../../widgets/icon_button.dart';
 
 class SliverAppBarDetailsScreen extends StatelessWidget {
@@ -14,7 +15,7 @@ class SliverAppBarDetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverAppBar(
       automaticallyImplyLeading: false,
-      backgroundColor: Colors.green,
+      backgroundColor: AppColors.primary,
       // floating: true,
       pinned: true,
       elevation: 0,

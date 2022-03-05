@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../../../models/store_model.dart';
+import '../../../theme/app_color.dart';
 
 class ItemStore extends StatelessWidget {
   const ItemStore({Key? key, required this.store, this.onTap})
@@ -151,14 +152,14 @@ class ItemStore extends StatelessWidget {
                         child: Text.rich(
                           TextSpan(
                             children: [
-                              WidgetSpan(
+                              const WidgetSpan(
                                   child: Icon(Icons.percent_outlined,
-                                      color: Colors.green[700], size: 18),
+                                      color: AppColors.primary, size: 18),
                                   alignment: PlaceholderAlignment.middle),
                               TextSpan(
                                 text: '${store.promo}',
-                                style: TextStyle(
-                                    color: Colors.green[700],
+                                style: const TextStyle(
+                                    color: AppColors.primary,
                                     fontSize: 13,
                                     fontWeight: FontWeight.bold),
                               )

@@ -5,6 +5,7 @@ import 'package:tab_indicator_styler/tab_indicator_styler.dart';
 import 'package:testwidgets/screens/store/widgets/toggle.dart';
 
 import '../../../models/store_model.dart';
+import '../../../theme/app_color.dart';
 import '../../../widgets/icon_button.dart';
 
 class SliverAppBarStoreScreen extends StatefulWidget {
@@ -28,7 +29,7 @@ class _SliverAppBarStoreScreenState extends State<SliverAppBarStoreScreen> {
     const _bottomHeight = kToolbarHeight + 65;
     return SliverAppBar(
       automaticallyImplyLeading: false,
-      backgroundColor: Colors.green,
+      backgroundColor: AppColors.primary,
       // floating: true,
       pinned: true,
       elevation: 0,
@@ -183,7 +184,7 @@ class _SliverAppBarStoreScreenState extends State<SliverAppBarStoreScreen> {
                 child: TabBar(
                   isScrollable: true,
                   labelPadding: const EdgeInsets.symmetric(horizontal: 10),
-                  indicatorColor: Colors.green,
+                  indicatorColor: AppColors.primary,
                   padding: const EdgeInsets.all(0),
                   tabs: List.generate(
                     storeCurrent.categories?.length ?? 0,
@@ -195,7 +196,7 @@ class _SliverAppBarStoreScreenState extends State<SliverAppBarStoreScreen> {
                   labelColor: Colors.white,
                   unselectedLabelColor: Colors.grey[900],
                   indicator: RectangularIndicator(
-                    color: Colors.green,
+                    color: AppColors.primary,
                     verticalPadding: 0,
                     bottomLeftRadius: 100,
                     bottomRightRadius: 100,

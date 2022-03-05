@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:testwidgets/screens/home/home_screen.dart';
-
-import 'models/product_model.dart';
-import 'screens/store/widgets/item_product.dart';
+import 'package:testwidgets/screens/method_pay/method_pay_screen.dart';
+import 'package:testwidgets/screens/profile/profile_screen.dart';
 
 String priceFormat(num? price) {
   final _oCcy = NumberFormat("#,##0");
@@ -23,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.green),
-      home: const HomeScreen(),
+      home: const MethodPayScreen(),
     );
   }
 }

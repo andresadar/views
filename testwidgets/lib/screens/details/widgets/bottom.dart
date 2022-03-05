@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../theme/app_color.dart';
 import '../../../widgets/buttons/button_row.dart';
 
 class BottomDetailsScreen extends StatelessWidget {
@@ -44,7 +45,8 @@ class _IncrementDecrementWidget extends StatelessWidget {
           const SizedBox(
             width: 10,
           ),
-          const Text('1', style: TextStyle(color: Colors.green, fontSize: 18)),
+          const Text('1',
+              style: TextStyle(color: AppColors.primary, fontSize: 18)),
           const SizedBox(
             width: 10,
           ),
@@ -75,7 +77,7 @@ class _IncrementDecrementWidget extends StatelessWidget {
           ],
         ),
         child: FittedBox(
-          child: Icon(icon, color: Colors.green),
+          child: Icon(icon, color: AppColors.primary),
         ),
       ),
     );

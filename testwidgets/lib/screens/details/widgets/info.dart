@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../main.dart';
 import '../../../models/product_model.dart';
+import '../../../theme/app_color.dart';
 
 class InfoProductDetailsScreen extends StatelessWidget {
   const InfoProductDetailsScreen({
@@ -43,17 +44,17 @@ class InfoProductDetailsScreen extends StatelessWidget {
                       )
                     ]),
                 maxLines: 2,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 18,
-                  color: Colors.green[700],
+                  color: AppColors.primary,
                   fontWeight: FontWeight.bold,
                 ),
               )
             : Text(
                 priceFormat(product.price),
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 18,
-                  color: Colors.green[700],
+                  color: AppColors.primary,
                   fontWeight: FontWeight.bold,
                 ),
               ),

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../main.dart';
 import '../../../models/cart_model.dart';
 import '../../../models/product_model.dart';
+import '../../../theme/app_color.dart';
 
 class Recommendations extends StatelessWidget {
   const Recommendations({Key? key}) : super(key: key);
@@ -78,7 +79,7 @@ class _ItemRecommendation extends StatelessWidget {
           Text(
             priceFormat(product.price),
             style: const TextStyle(
-                color: Colors.green, fontWeight: FontWeight.bold),
+                color: AppColors.primary, fontWeight: FontWeight.bold),
           ),
         ],
       ),

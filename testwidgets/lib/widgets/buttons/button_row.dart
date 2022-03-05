@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../theme/app_color.dart';
+
 class ButtonRow extends StatelessWidget {
   const ButtonRow(
       {Key? key, this.onTap, required this.text, required this.icon})
@@ -19,7 +21,7 @@ class ButtonRow extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(50),
-          color: Colors.green,
+          color: AppColors.primary,
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
@@ -45,7 +47,7 @@ class ButtonRow extends StatelessWidget {
               child: FittedBox(
                 child: Icon(
                   icon,
-                  color: Colors.green,
+                  color: AppColors.primary,
                 ),
               ),
             )

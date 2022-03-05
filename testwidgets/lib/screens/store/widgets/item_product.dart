@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../main.dart';
 import '../../../models/product_model.dart';
+import '../../../theme/app_color.dart';
 
 class ItemProduct extends StatelessWidget {
   const ItemProduct({Key? key, required this.product, this.onTap})
@@ -94,17 +95,17 @@ class ItemProduct extends StatelessWidget {
                                   )
                                 ]),
                             maxLines: 2,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 12,
-                              color: Colors.green[700],
+                              color: AppColors.primary,
                               fontWeight: FontWeight.bold,
                             ),
                           )
                         : Text(
                             priceFormat(product.price),
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 12,
-                              color: Colors.green[700],
+                              color: AppColors.primary,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
