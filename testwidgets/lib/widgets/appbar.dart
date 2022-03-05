@@ -14,6 +14,7 @@ class AppBarStyle1 extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return sliver
         ? SliverAppBar(
+            automaticallyImplyLeading: false,
             floating: true,
             pinned: false,
             backgroundColor: Colors.white,
@@ -40,6 +41,7 @@ class AppBarStyle1 extends StatelessWidget implements PreferredSizeWidget {
             actions: [suffix ?? const SizedBox(), const SizedBox(width: 5)],
           )
         : AppBar(
+            automaticallyImplyLeading: false,
             backgroundColor: Colors.transparent,
             elevation: 0,
             centerTitle: true,
